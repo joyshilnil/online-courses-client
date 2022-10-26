@@ -1,6 +1,5 @@
-.main-container {
-    background-image: url(https://vdemy-vue.envytheme.com/img/main-banner1.0657f9c0.jpg);
+.home-container {
     width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
+     height: 100vh;
+ }
+ 
