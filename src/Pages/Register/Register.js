@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvide';
+import './Register.css';
 
 const Register = () => {
 
@@ -69,7 +70,7 @@ const Register = () => {
 
     return (
       
-        <Form onSubmit={handleSubmit} className='shadow rounded p-4 w-50 m-auto'>
+        <Form onSubmit={handleSubmit} className='form-cotainer shadow rounded p-4 m-auto'>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control name='name' type="text" placeholder="Enter Your Name" />

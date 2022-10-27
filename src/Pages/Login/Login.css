@@ -1,0 +1,9 @@
+.form-container {
+    width: 50%;
+}
+
+@media (max-width: 575.98px) { 
+    .form-container {
+        width: 100%;
+    }
+ }

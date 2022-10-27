@@ -1,0 +1,9 @@
+.form-cotainer {
+    width: 50%;
+}
+
+@media (max-width: 575.98px) { 
+    .form-cotainer {
+        width: 100%;
+    }
+ }

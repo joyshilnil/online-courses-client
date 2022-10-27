@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';import toast from 'react-hot-toast';
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvide';
+import './Login.css';
 
 
 const Login = () => {
@@ -66,7 +67,7 @@ const Login = () => {
     }
 
     return (
-    <Form onSubmit={handleSignIn} className='shadow rounded p-4 w-50 m-auto'>
+    <Form onSubmit={handleSignIn} className='form-container shadow rounded p-4 m-auto'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control name='email' type="email" placeholder="Enter email" required/>

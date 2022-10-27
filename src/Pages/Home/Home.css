@@ -51,3 +51,12 @@
     color: #000;
     background: #fff;
 }
+
+@media (min-width: 320px) and (max-width: 1024px) { 
+
+    .ax-home-title h1 {
+        font-size: 3rem;
+        color: #fff;
+    }
+
+ }
