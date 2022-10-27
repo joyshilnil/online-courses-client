@@ -9,6 +9,8 @@ import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
 import TermsAndConditions from "../../Pages/Others/TermsAndConditions/TermsAndConditions";
 import Register from "../../Pages/Register/Register";
+import ScretPage from "../../Pages/ScretPage/ScretPage";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 export const routes = createBrowserRouter([
     {
@@ -22,7 +24,13 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/courses',
-                element: <Courses></Courses>
+                element: <Courses></Courses>,
+                loader:  () => fetch(`http://localhost:5000/courses`)
+            },            
+            {
+                path: '/courses/:id',
+                element: <Course></Course>,
+                loader:({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
             },
             {
                 path: '/faq',
@@ -45,8 +53,9 @@ export const routes = createBrowserRouter([
                 element: <TermsAndConditions></TermsAndConditions>
             },
             {
-                path: '/course/:id',
-                element: <Course></Course>
+                path: '/scret/courses/:id',
+                element: <PrivateRoute><ScretPage></ScretPage></PrivateRoute>,                
+                loader:({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
             },
         ]
     }

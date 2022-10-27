@@ -1,4 +1,44 @@
 .main-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+   display: flex;
+   justify-content: space-between;
 }
+.right-side {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.courses-container img {width: 100%;object-fit: cover;}
+
+.left-side {
+    width: 20%;
+    height: 100%;
+}
+.details-btn {
+    padding: 15px 20px;
+    border: none;
+    background-color: antiquewhite;
+    transition: 0.3s;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+.details-btn:hover {
+    background-color: #88e81c, 
+}
+
+
+
+@media (max-width: 575.98px) {   
+    .main-container {
+        flex-direction: column;
+    }  
+    .left-side {
+        width: 100%;
+    }
+    .right-side {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+ }
