@@ -3,7 +3,11 @@
 This project Client Site [Source Code](https://github.com/programming-hero-web-course1/b610-learning-platform-client-side-joyshilnil).
 
 This project Server Site [Source Code](https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-joyshilnil).
+This project [Live Site Link](https://online-course-435fb.web.app/).
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## FAQs
+***
+A list of frequently asked questions
+1. **This is a question in bold**
+Answer to the first question with _italic words_. 
+2. __Second question in bold__ 
