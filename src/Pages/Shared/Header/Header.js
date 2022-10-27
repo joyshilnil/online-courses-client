@@ -7,6 +7,7 @@ import { FaUser } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvide';
+import Logo from '../../../assets/logo.png';
 
 const Header = () => {
 
@@ -22,13 +23,17 @@ const Header = () => {
 
 
 
-
-
-
     return (
-        <Navbar className='mb-4' collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
-          <Navbar.Brand><Link to='/'  className='text-danger'>ONLINE COURSE</Link></Navbar.Brand>
+          <Navbar.Brand>
+            <Link to='/'  className='text-danger'>ONLINE COURSE</Link>
+            <Image
+            style={{height: '40px'}}
+              src={Logo}
+            >              
+            </Image>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -57,7 +62,7 @@ const Header = () => {
               <Nav>
                 {
                   user?.photoURL ?
-                  <Image
+                  <Image title={user?.displayName}
                   style={{height: '30px'}}
                   
                     roundedCircle

@@ -3,6 +3,7 @@ import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import Course from "../../Pages/Course/Course";
 import Courses from "../../Pages/Courses/Courses";
+import Error from "../../Pages/Error/Error";
 import Faq from "../../Pages/Faq/Faq";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
@@ -12,7 +13,8 @@ import Register from "../../Pages/Register/Register";
 export const routes = createBrowserRouter([
     {
         path:'/',
-        element:<Main></Main>,
+        element:<Main></Main>,        
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',

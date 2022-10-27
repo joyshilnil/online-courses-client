@@ -10,7 +10,7 @@ const Main = () => {
             <Header></Header>
                 <Container>
                     <Row>
-                        <Col lg="12">
+                        <Col lg="12" className='pt-4'>
                             <Outlet></Outlet>
                         </Col>
                     </Row>

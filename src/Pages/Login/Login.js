@@ -2,7 +2,6 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';import toast from 'react-hot-toast';
-
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvide';
@@ -67,7 +66,7 @@ const Login = () => {
     }
 
     return (
-    <Form onSubmit={handleSignIn}>
+    <Form onSubmit={handleSignIn} className='shadow rounded p-4 w-50 m-auto'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control name='email' type="email" placeholder="Enter email" required/>
@@ -77,7 +76,7 @@ const Login = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control name='password' type="password" placeholder="Password" required/>
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button type="submit" className='mt-2 mb-2'>
           Login
         </Button>
 
