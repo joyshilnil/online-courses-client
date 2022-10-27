@@ -28,8 +28,8 @@ const Courses = () => {
                         {
                             courses.map(course => <div key={course.id} className='courses-container p-3 shadow text-primary bolder rounded'>
                                 <Image src={course.image}></Image>
-                                <h4>{course.title}</h4>
-                                <p>{course.body}</p>
+                                <h4 className='text-dark pt-3 pb-2'>{course.title}</h4>
+                                <p className='mb-4'>{course.body.slice(0, 80)}</p>
                                 <Link to={`/courses/${course.id}`} className='details-btn'>View Details</Link>
                             </div>
                             
