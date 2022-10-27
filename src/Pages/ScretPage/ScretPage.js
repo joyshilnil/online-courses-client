@@ -10,6 +10,7 @@ const ScretPage = () => {
             <h3 className='mb-4 text-primary'>This Querse Name: {secret.name}</h3>
             <h2 className='mt-3 mb-3'>{secret.title}</h2>
             <p>{secret.body}</p>
+            
         </div>
     );
 };

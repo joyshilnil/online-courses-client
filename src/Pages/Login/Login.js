@@ -57,10 +57,10 @@ const Login = () => {
         })
 
         .catch(error => {
-          console.error(error)
+          // console.error(error)
           setError(error.message);
         })
-        .fanally( () => {
+        .finally( () => {
           setLoading(false);
         })
 

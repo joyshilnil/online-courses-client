@@ -8,6 +8,7 @@ import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvide';
 import Logo from '../../../assets/logo.png';
+import './Header.css';
 
 const Header = () => {
 
@@ -42,6 +43,17 @@ const Header = () => {
               <Nav className='me-4'><Link className='text-dark' to='/courses'>Courses</Link></Nav>
               <Nav className='me-4'><Link  className='text-dark' to='/faq'>FAQ</Link></Nav>
               <Nav className='me-4'><Link className='text-dark' to='/blog'>Blog</Link></Nav>
+              <Nav>
+              <div className="toggle-button-cover">
+      <div className="button-cover">
+        <div className="button r" id="button-1">
+          <input type="checkbox" className="checkbox" />
+          <div className="knobs"></div>
+          <div className="layer"></div>
+        </div>
+      </div>
+    </div>
+              </Nav>
               
             <Nav>
               <Nav>

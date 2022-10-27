@@ -25,12 +25,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/courses',
                 element: <Courses></Courses>,
-                loader:  () => fetch(`http://localhost:5000/courses`)
+                loader:  () => fetch(`https://online-course-server-tan.vercel.app/courses`)
             },            
             {
                 path: '/courses/:id',
                 element: <Course></Course>,
-                loader:({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
+                loader:({params}) => fetch(`https://online-course-server-tan.vercel.app/courses/${params.id}`)
             },
             {
                 path: '/faq',
@@ -55,7 +55,7 @@ export const routes = createBrowserRouter([
             {
                 path: '/scret/courses/:id',
                 element: <PrivateRoute><ScretPage></ScretPage></PrivateRoute>,                
-                loader:({params}) => fetch(`http://localhost:5000/courses/${params.id}`)
+                loader:({params}) => fetch(`https://online-course-server-tan.vercel.app/courses/${params.id}`)
             },
         ]
     }
