@@ -1,62 +1,46 @@
 .home-container {
-    background-color: #00DBDE;
-    background-image: linear-gradient(117deg, #00DBDE 0%, #FC00FF 100%);
+    background-color: #D8E7FC;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ax-home-subtitle {
-    background: yellow;
-    display: inline-block;
-    padding: 4px 20px;
-    border-radius: 6px;
-}
-
-.ax-home-subtitle p {
-    margin: 0;
-}
-
-.ax-home-subtitle {
-    background: yellow;
-    display: inline-block;
-    padding: 4px 20px;
-    border-radius: 6px;
-}
-
-.ax-home-subtitle p {
-    margin: 0;
-}
-
 .ax-home-title h1 {
     font-size: 5rem;
-    color: #fff;
+    color: #0D5EF4;
 }
 
 .ax-home-dres p {
-    margin: 20px 0; 
-    color: darkred;
+    margin: 20px; 
+    font-size: 37px;
+    font-weight: 600;
+    color: #0F2239;
+}
+.ax-home-btn {
+    margin-top: 50px;
 }
 
 .ax-home-first-btn {
-    color: #fff;
-    padding: 7px 19px;
-    border: 1px solid #fff;
+    padding: 15px 30px;
     border-radius: 3px;
     transition: .4s;
+    background: #fff;
+    color: #0D5EF4;
+    font-weight: 600;
+    font-size: 20px;    
 }
 
 .ax-home-first-btn:hover {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #0D5EF4;
 }
 
 @media (min-width: 320px) and (max-width: 1024px) { 
 
     .ax-home-title h1 {
         font-size: 3rem;
-        color: #fff;
+        color: #0D5EF4;
     }
 
  }
